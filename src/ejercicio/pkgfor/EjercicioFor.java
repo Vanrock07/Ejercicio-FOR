@@ -26,7 +26,6 @@ public class EjercicioFor {
         String asterisco = "*";
        
             for (int i = 0; i < 4; i++) {
-            System.out.println(" ");
             System.out.println("Escriba un numero");
 
             numero = leernum.nextInt();
@@ -41,9 +40,8 @@ public class EjercicioFor {
                     for (int j = 0; j < numero; j++) {   //escribir los asteriscos
                     System.out.print( asterisco ); 
                     
-                }
-                  
-          
+                    }
+                    System.out.println(" ");
         }
     }
     }
