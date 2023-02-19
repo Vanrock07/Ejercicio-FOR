@@ -22,24 +22,29 @@ public class EjercicioFor {
     public static void main(String[] args) {
         
         Scanner leernum = new Scanner(System.in);
-        int numero;
+        int numero, cont;
         String asterisco = "*";
        
-        System.out.println("Escriba algunos numeros");
-        
-        for (int i = 0; i < 4; i++) { 
+            for (int i = 0; i < 4; i++) {
+            System.out.println(" ");
+            System.out.println("Escriba un numero");
+
             numero = leernum.nextInt();
-               
-            if (numero>0 && numero <21) { 
-                    System.out.print( + numero ); 
-                    
-                for (int j = 0; j < numero; j++) {
+            
+            while(numero<1 || numero>20) {                //validar si el numero esta entre 1 y 20
+            System.out.println("El numero esta fuera del limite");
+            System.out.println("Intente nuevamente");
+            numero = leernum.nextInt();
+        }                
+                    System.out.print( + numero );        //Aqui se crea
+                                                         //la iteracion para
+                    for (int j = 0; j < numero; j++) {   //escribir los asteriscos
                     System.out.print( asterisco ); 
+                    
                 }
                   
-            } else 
-                System.out.println("El numero esta fuera del limite");   
+          
         }
     }
-    
-}
+    }
+   
